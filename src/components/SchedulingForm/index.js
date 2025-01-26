@@ -54,11 +54,11 @@ const SchedulingForm = ({ data }) => {
 
   const processBlockedSlots = (schedulingData) => {
     const blocked = [];
-    const selectedDateObj = new Date(selectedDate + `T00:00:00Z`);
+    const selectedDateObj = new Date(selectedDate + `T00:00:00`);
 
     schedulingData.forEach((item) => {
       if(!edit || edit.id != item.id) {
-        const schedulingDate = new Date(item.inicio + "z");
+        const schedulingDate = new Date(item.inicio);
   
         if (
           schedulingDate.getDate() === selectedDateObj.getDate() &&
