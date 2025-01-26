@@ -1,0 +1,42 @@
+.section {
+  width: 1980px;
+  max-width: calc(100% - 20px);
+  margin: 24px auto;
+}
+.title {
+  color: var(--primary);
+  padding: 16px;
+  border-radius: 16px;
+  opacity: .8;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+ }
+ .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  background: var(--sup_9);
+  border-radius: 16px;
+  color: var(--sup_10);
+  transition: 333ms all ease-in-out;
+ }
+ .item strong {
+  color: var(--secondary);
+ }
+ .button {
+  margin: 8px;
+  transition: 333ms all ease-in;
+  cursor: pointer;
+ }
+ .button:hover {
+  color: var(--primary);
+ }

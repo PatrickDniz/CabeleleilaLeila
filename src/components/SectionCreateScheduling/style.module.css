@@ -1,0 +1,44 @@
+.section {
+  width: 1980px;
+  max-width: calc(100% - 80px);
+  margin: 24px auto;
+}
+.cardList {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ width: 100;
+ gap: 20px;
+}
+.cardItem {
+  padding: 16px;
+  background: var(--sup_9);
+  border-radius: 16px;
+  color: var(--sup_10);
+  cursor: pointer;
+  transition: 333ms all ease-in-out;
+}
+.cardItem.selected {
+  background: var(--sup_5);
+}
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  margin: 20px auto;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 20px;
+}
+.observation {
+  background: var(--sup_9);
+  color: var(--error);
+  padding: 16px;
+  border-radius: 16px;
+  opacity: .8;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+.logo > img {
+  object-fit: contain;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--quinary);
+
+  
+}
+.logo > svg {
+  transform: rotateY(180deg);
+}
+@media (max-width: 520px) {
+  .logo {
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 38px;
+  }
+}
