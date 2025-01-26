@@ -46,7 +46,7 @@ export default function SectionCreateScheduling() {
       </div>
 
       <div className={styles.summary}>
-        <p>Total de Valor: {totalValue}</p>
+        <p>Valor Total: {totalValue}</p>
         <p>Total de Período: {totalPeriod}</p>
       </div>
       <div className={styles.observation}>
